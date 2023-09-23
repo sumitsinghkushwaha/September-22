@@ -1,0 +1,28 @@
+/* universal selector */
+*{
+    background-color: black;
+    /* color: white; */
+}
+/* Type selector
+h1{
+    text-align: center;
+}  */
+/* class selector */
+.sumit{
+    text-align: center;
+    color: yellow;
+    height: 300px;
+    width: 400px;
+}
+.red{
+    background-color: red;
+    color: red;
+}
+.green{
+    background-color: green;
+    color: green;
+}
+.blue{
+    background-color: blue;
+    color: blue;
+}
