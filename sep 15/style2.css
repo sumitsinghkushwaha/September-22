@@ -1,8 +1,8 @@
 /* universal selector */
-*{
+/* *{
     background-color: black;
     /* color: white; */
-}
+} */
 /* Type selector
 h1{
     text-align: center;
@@ -25,4 +25,21 @@ h1{
 .blue{
     background-color: blue;
     color: blue;
+}
+/* id selectors */
+#ending{
+    text-align: center;
+    text-size-adjust: 30%;
+    font-weight: 900;
+    height: 600px;
+    color: aliceblue;
+}
+/* Combinator selectors */
+/* Desecendant Selector */
+/* .mycontact p{
+    color: red;
+} */
+/* Child Selector */
+.mycontact>p{
+    color: blueviolet;
 }
