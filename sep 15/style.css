@@ -1,0 +1,15 @@
+h1{
+    color: blue;
+    text-align: center;
+}
+body{
+    background-color: aqua;
+}
+#heading2{
+    background-color: rgb(170, 121, 216);
+    text-align: center;
+
+}
+p{
+    color: red;
+}
