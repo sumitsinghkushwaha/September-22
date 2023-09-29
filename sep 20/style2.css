@@ -1,0 +1,21 @@
+#page{
+    display: flex;
+    background-color: bisque;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: space-evenly;
+    align-items: center;
+
+    /* flex-direction: row; */
+    /* flex-wrap: wrap; */
+    flex-wrap: wrap-reverse;
+}
+#img{
+    width: 400px;
+    height: 200px;
+    padding: 20px;
+
+}
+#page>p{
+    width: 400px;
+    text-align: justify;
+}
