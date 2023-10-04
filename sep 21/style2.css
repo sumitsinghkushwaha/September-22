@@ -1,0 +1,26 @@
+#grid{
+    background-color: grey;
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    grid-template-columns: 1fr 6fr;
+    text-align: center;
+   
+    grid-template-rows: 1fr 8fr 1fr;
+}
+#Header{
+    background-color: blue;
+    grid-column: 1 / -1;
+}
+#Menu{
+    background-color: red;
+    
+}
+#content{
+    background-color: violet;
+    
+}
+#Footer{
+    background-color: yellow;
+    grid-column: 1 / -1;
+}
