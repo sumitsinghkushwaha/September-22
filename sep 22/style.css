@@ -1,0 +1,56 @@
+#box{
+    width: 100vw;
+    gap: 10px;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    
+}
+div img{
+    width: 500px;
+    height: 600px;
+    gap: 15px;
+    border-radius: 10px;
+}
+nav{
+    width: 100vw;
+    padding: 15px;
+    display: flex;
+    justify-content: space-around;
+    background-color: aliceblue;
+}
+nav div a{
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20px;
+    margin: 10px;
+}
+button{
+    background-color: blue;
+    padding: 5px;
+    color: white;
+    font-size: 30px;
+    font-weight: 900;
+    border-radius: 20px;
+    border: none;
+}
+
+@media screen and (max-width:1800px) {
+    #box{
+        grid-template-columns: repeat(4,1fr);
+    }    
+}
+@media screen and (max-width:1500px) {
+    #box{
+        grid-template-columns: repeat(3,1fr);
+    }    
+}
+@media screen and (max-width:1000px) {
+    #box{
+        grid-template-columns: repeat(2,1fr);
+    }    
+}
+@media screen and (max-width:400px) {
+    #box{
+        grid-template-columns: repeat(1,1fr);
+    }    
+}
