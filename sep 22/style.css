@@ -48,6 +48,121 @@ nav>div{
     flex-wrap: wrap;
 }
 
+#course-board{
+    text-align: center;
+    font-size: 30px;
+}
+
+#card{
+    width: 300px;
+    height: 400px;
+    border-radius: 10px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(0,142,142);
+    color: white;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    background: linear-gradient(to left, rgb(228, 138, 12),rgb(212, 194, 99));
+}
+
+#card>h1, #card>p{
+    padding: 20px;
+}
+.card_footer{
+    padding: 20px;
+    display: flex;
+    box-sizing: border-box;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.2);
+    
+
+}
+.card_footer>button{
+    font-weight: 900;
+    font-size: 15px;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    color: white;
+}
+
+#course_cards{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    box-sizing: border-box;
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    
+}
+.footer_row1{
+    text-align: center;
+    width: 100vw;
+    background-color: rgb(72,87,105);
+    color: white;
+    padding: 15px;
+    font-size: 20px;
+}
+
+.footer_row5{
+    display: flex;
+    justify-content: space-around;
+    width: 72vw;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    padding-inline:15%;
+    margin: auto;
+    background-color: rgb(19,26,34);
+    color: white;
+    margin: 0px;
+
+    
+}
+.footer_row5 > ul{
+    display: flex;
+    list-style-type: none;
+}
+.footer_row5 > ul >li{
+    width: 200px;
+    box-sizing: border-box;
+    padding-inline: 40px;
+    margin-top: 20px;
+    text-align: justify;
+    line-height: 80%;
+
+}
+
+.footer_row5 > ul > li a{
+    color: rgb(221,221,215);
+    text-decoration: none;
+    font-size: 14px;
+    
+}
+.footer_row5 > ul > li a:hover{
+    color: rgb(245, 245, 245);
+    text-decoration: underline;
+}
+
+.footer_row6{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(19,26,34);
+    color: white;
+    width: 100vw;
+    line-height: 2px;
+    padding: 20px;
+}
+
 @media screen and (max-width:1800px) {
     #box{
         grid-template-columns: repeat(4,1fr);
@@ -57,6 +172,9 @@ nav>div{
     #box{
         grid-template-columns: repeat(3,1fr);
     }    
+    #course_cards{
+        grid-template-columns: repeat(3,1fr);
+    }
 }
 @media screen and (max-width:1200px) {
     #box{
@@ -66,9 +184,16 @@ nav>div{
         flex-direction: column;
         align-items: center;
     }  
+    #course_cards{
+        grid-template-columns: repeat(2,1fr);
+    }
 }
 @media screen and (max-width:900px) {
     #box{
         grid-template-columns: repeat(1,1fr);
-    }    
+    }   
+    #course_cards{
+        grid-template-columns: repeat(1,1fr);
+    } 
 }
+
