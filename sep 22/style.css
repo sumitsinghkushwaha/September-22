@@ -3,6 +3,7 @@
     gap: 10px;
     display: grid;
     grid-template-columns: repeat(5,1fr);
+    box-sizing: border-box;
     
 }
 div img{
@@ -12,26 +13,39 @@ div img{
     border-radius: 10px;
 }
 nav{
+    font-family: Arial, Helvetica, sans-serif;
     width: 100vw;
     padding: 15px;
     display: flex;
     justify-content: space-around;
     background-color: aliceblue;
+    position: sticky;
+    top: 0px;
 }
 nav div a{
     text-decoration: none;
     font-size: 20px;
     padding: 20px;
     margin: 10px;
-}
-button{
-    background-color: blue;
-    padding: 5px;
-    color: white;
-    font-size: 30px;
     font-weight: 900;
-    border-radius: 20px;
-    border: none;
+    
+}
+
+nav > div >button{
+    border: 10px solid blue;
+    border-radius: 8px;
+    background-color: blue;
+    color: white;
+    font-size: large;
+    padding: 10px;
+    font-weight: 900;
+    
+}
+nav>div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 @media screen and (max-width:1800px) {
@@ -44,12 +58,16 @@ button{
         grid-template-columns: repeat(3,1fr);
     }    
 }
-@media screen and (max-width:1000px) {
+@media screen and (max-width:1200px) {
     #box{
         grid-template-columns: repeat(2,1fr);
-    }    
+    }  
+    nav{
+        flex-direction: column;
+        align-items: center;
+    }  
 }
-@media screen and (max-width:400px) {
+@media screen and (max-width:900px) {
     #box{
         grid-template-columns: repeat(1,1fr);
     }    
