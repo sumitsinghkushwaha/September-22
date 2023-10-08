@@ -1,8 +1,8 @@
 #box{
-    width: 100vw;
+    width: 100px;
     gap: 10px;
     display: grid;
-    grid-template-columns: repeat(5,1fr);
+    grid-template-columns: repeat(4,1fr);
     box-sizing: border-box;
     
 }
@@ -112,11 +112,34 @@ nav>div{
     padding: 15px;
     font-size: 20px;
 }
+.footer_row4{
+    background-color: rgb(19,26,34);
+    width: 100%;
+    padding: 12px;
+    padding-inline: 10vw;
+    box-sizing: border-box;
+}
+.footer_row4>ul{
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-between;
+    padding-inline: 10vw;
+    flex-wrap: wrap;
+    list-style-type: none;
+    gap: 10px;
+    background-color: rgb(19,26,34);
+    color: white;
+
+}
+.footer_row4>ul>li{
+    width: 80px;
+    font-size: 13px;
+}
 
 .footer_row5{
     display: flex;
     justify-content: space-around;
-    width: 72vw;
+    width: 100%;
     flex-wrap: wrap;
     align-items: flex-end;
     padding-inline:15%;
@@ -132,6 +155,7 @@ nav>div{
     list-style-type: none;
 }
 .footer_row5 > ul >li{
+    display: flex;
     width: 200px;
     box-sizing: border-box;
     padding-inline: 40px;
@@ -195,5 +219,12 @@ nav>div{
     #course_cards{
         grid-template-columns: repeat(1,1fr);
     } 
+    .footer_row5{
+        width: 80%;
+        text-align: center;
+    }
+    .footer_row6{
+        text-align: center;
+    }
 }
 
